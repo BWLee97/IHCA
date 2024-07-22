@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import os
 
 st.subheader('天津医科大学总医院院内心脏骤停患者死亡风险预测模型')
 
@@ -32,7 +33,7 @@ def norm(x, xmin, xmax):
     return x
 
 
-with open('BWLee97\IHCA\my_model.pkl', 'rb') as file:
+with open('my_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 with st.expander('**预测结果**'):
