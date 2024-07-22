@@ -1,6 +1,4 @@
 import streamlit as st
-from streamlit_shap import st_shap
-import shap
 import pandas as pd
 import pickle
 
