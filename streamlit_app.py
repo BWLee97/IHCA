@@ -32,7 +32,7 @@ def norm(x, xmin, xmax):
     return x
 
 
-with open('BWLee97/IHCA/my_model.pkl', 'rb') as file:
+with open('BWLee97\IHCA\my_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 with st.expander('**预测结果**'):
